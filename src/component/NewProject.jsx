@@ -4,7 +4,7 @@ Appel de la fonction input a la deuxieme div qui racourci le code a écrire
 import { useRef } from "react";
 import Input from "./Input.jsx";
 import Button from "./CustomButton.jsx";
-import Modal from "./modal.jsx";
+import Modal from "./Modal.jsx";
 
 
 
