@@ -47,7 +47,9 @@ export default function NewProject({ onAdd, onCancel }) {
     return (
         <>
             <Modal ref={modal} buttonCaption="close">
-
+            <h2 className=" text-xl font-bold text-stone-700 my-4 "> UNE ERREUR EST Survenue</h2>
+                <p className='text-stone-550 mb-4'> Oups,  </p>
+                <p className='text-stone-550 mb-4'> merci de vérifier les champs saisis.</p>
             </Modal>
 
 
