@@ -2,8 +2,10 @@
 
 // composent de la selection d'un project dans le slideBar
 
+import Tasks from "./Tasks.jsx";
 
-export default function ProjectSelected({ project, onDelete }) {
+
+export default function ProjectSelected({ project, onDelete, onAddTask, onDeleteTask, tasks }) {
     const formattedDate = new Date(project.date).toLocaleDateString('fr-FR', {
         year: 'numeric',
         month: 'short',
@@ -22,7 +24,7 @@ export default function ProjectSelected({ project, onDelete }) {
                     {project.description}
                 </p>
             </header>
-            TASKS
+            <Tasks onAdd={onAddTask} onDelete={onDeleteTask} tasks={tasks} />
         </div>
     );
 }
